@@ -1,0 +1,102 @@
+.container {
+  padding-top: 50px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.container .selected {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .selected p {
+  color: red;
+}
+.container .selected #selContent {
+  border-bottom: 1px solid red;
+}
+.container .input_block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+.container .input_block .inp {
+  border: 2px solid #4CAF50;
+  padding: 10px 30px;
+  opacity: 0.3;
+}
+.container .input_block .inp:focus {
+  opacity: 0.9;
+  border: 3px solid #4CAF50;
+  outline: none;
+}
+.container .input_block .btn3 {
+  padding: 10px 30px;
+  background-color: white;
+  color: black;
+  border: 2px solid #4CAF50; /* Green */
+}
+.container .input_block .btn3:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+.container .input_block .btn3:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+.container .div1 {
+  padding: 16px;
+  background-color: #D6D58E;
+  text-align: center;
+}
+.container .div1 .div4 {
+  display: flex;
+  justify-content: space-around;
+  padding: 16px;
+  background-color: #005C53;
+}
+.container .div1 .div4 .div2 {
+  padding: 16px;
+  background-color: #E6862F;
+  height: 200px;
+  width: 100px;
+}
+.container .div1 .div4 .div2 .button1 {
+  padding: 10px 30px;
+  background-color: white;
+  color: black;
+  border: 2px solid #4CAF50; /* Green */
+}
+.container .div1 .div4 .div2 .button1:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+.container .div1 .div4 .div2 .button1:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+.container .div1 .div4 .div3 {
+  padding: 16px;
+  background-color: #FFCD39;
+  height: 200px;
+  width: 100px;
+}
+.container .div1 .div4 .div3 .button2 {
+  padding: 10px 30px;
+  background-color: white;
+  color: black;
+  border: 2px solid #4CAF50; /* Green */
+}
+.container .div1 .div4 .div3 .button2:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+.container .div1 .div4 .div3 .button2:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,104 @@
+.container {
+  padding-top: 50px;
+  max-width: 700px;
+  margin: 0 auto;
+
+  .selected {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+      color: red;
+    }
+    #selContent {
+      border-bottom: 1px solid red;
+    }
+  }
+  .input_block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    .inp {
+      border: 2px solid #4CAF50;
+
+      padding: 10px 30px;
+      opacity: 0.3;
+      &:focus {
+        opacity: 0.9;
+        border: 3px solid #4CAF50;
+        outline: none;
+      }
+    }
+    .btn3 {
+      padding: 10px 30px;
+      background-color: white;
+      color: black;
+      border: 2px solid #4CAF50; /* Green */
+      &:disabled {
+        opacity: 0.3;
+        cursor: not-allowed;
+      }
+      &:hover {
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        background-color: #4CAF50; /* Green */
+        color: white;
+      }
+    }
+  }
+
+  .div1 {
+    padding: 16px;
+    background-color: #D6D58E;
+    text-align: center;
+    .div4 {
+      display: flex;
+      justify-content: space-around;
+      padding: 16px;
+      background-color: #005C53;
+      .div2 {
+        padding: 16px;
+        background-color: #E6862F;
+        height: 200px;
+        width: 100px;
+        .button1 {
+          padding: 10px 30px;
+          background-color: white;
+          color: black;
+          border: 2px solid #4CAF50; /* Green */
+          &:disabled {
+            opacity: 0.3;
+            cursor: not-allowed;
+          }
+          &:hover {
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+            background-color: #4CAF50; /* Green */
+            color: white;
+          }
+        }
+      }
+      .div3 {
+        padding: 16px;
+        background-color: #FFCD39;
+        height: 200px;
+        width: 100px;
+        .button2 {
+          padding: 10px 30px;
+          background-color: white;
+          color: black;
+          border: 2px solid #4CAF50; /* Green */
+          &:disabled {
+            opacity: 0.3;
+            cursor: not-allowed;
+          }
+          &:hover {
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+            background-color: #4CAF50; /* Green */
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
