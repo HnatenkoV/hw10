@@ -46,7 +46,7 @@ const lowerCase = (event) => {
     if (event.key === event.key.toUpperCase()) {
         event.preventDefault();
     }
-}
+} /* <-----новий вариант №1 */
 
 // input.addEventListener('keypress', (event) => {
 //     const keyCode = event.keyCode;
