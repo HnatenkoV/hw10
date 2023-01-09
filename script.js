@@ -42,14 +42,26 @@ outsideSpace[0].addEventListener("click", (event) => {
 
 btn3.setAttribute('disabled', true);
 
-input.addEventListener('keypress', (event) => {
-    const keyCode = event.keyCode || event.which;
-    if ( !/[a-z-а-я]/.test(String.fromCharCode(keyCode)))
+const lowerCase = (event) => {
+    if (event.key === event.key.toUpperCase()) {
         event.preventDefault();
-});
+    }
+}
+
+// input.addEventListener('keypress', (event) => {
+//     const keyCode = event.keyCode;
+//     if ( !/[a-z-а-я]/.test(String.fromCharCode(keyCode)))
+//         event.preventDefault();
+// });  <-------- Новый вариант №2
+
+// function lowerCase(event) {
+//     input.value = input.value.replace (/[A-Z-А-Я]/, '');
+// }  <-------- Новый вариант №3
+
 
 input.addEventListener('input', (event) => {
-    // input.value = input.value.toLowerCase();
+    // input.value = input.value.toLowerCase(); <---- старый вариант
+
     input.value.length === 0 ? btn3.setAttribute('disabled', true) : btn3.removeAttribute('disabled');
 })
 
