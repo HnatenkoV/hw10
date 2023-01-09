@@ -2,7 +2,8 @@ const div = document.querySelector('div');
 const selected = document.getElementById('selContent');
 const btn3 = document.getElementById('button3');
 const input = document.getElementById('input');
-const outsideSpace = document.getElementsByTagName('body')
+const outsideSpace = document.getElementsByTagName('body');
+const message = document.getElementsByClassName('.message')
 
 // Напишите приложение которое при клике на div1, 2, 3, 4 будет выводить его имя напртов надписи Selected, на рисунке на против надписи Selected там где крестеки. ВАЖНО, для всех 3х Div будет один обработчик событий, а отличать вы их должны через атрибуты, просто отображая содержимое атрибута в вышеуказанном месте:
 //     event.target.getAttribute("div-name"); // Как получить значение атрибута
@@ -41,8 +42,14 @@ outsideSpace[0].addEventListener("click", (event) => {
 
 btn3.setAttribute('disabled', true);
 
-input.addEventListener('input', () => {
-    input.value = input.value.toLowerCase();
+input.addEventListener('keypress', (event) => {
+    const keyCode = event.keyCode || event.which;
+    if ( !/[a-z-а-я]/.test(String.fromCharCode(keyCode)))
+        event.preventDefault();
+});
+
+input.addEventListener('input', (event) => {
+    // input.value = input.value.toLowerCase();
     input.value.length === 0 ? btn3.setAttribute('disabled', true) : btn3.removeAttribute('disabled');
 })
 
